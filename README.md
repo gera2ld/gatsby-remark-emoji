@@ -6,7 +6,7 @@
 
 This is a plugin for gatsby-plugin-remark to replace `:emoji:` short names with UTF-8 emoji icons.
 
-It utilizes [remark-emoji](https://github.com/rhysd/remark-emoji) under the hood.
+It utilizes [emoji-js](https://github.com/iamcal/js-emoji) under the hood.
 
 ## Installation
 
@@ -22,4 +22,32 @@ Add to `gatsby-config.js`:
   plugins: [      
     '@gera2ld/gatsby-remark-emoji',
   ]
+
+  // or
+
+  plugins: [      
+    {
+      resolve: '@gera2ld/gatsby-remark-emoji',
+      options, // see below
+    },
+  ]
+```
+
+## Options
+
+Options will be assigned to `EmojiConvertor` instance, roughly the same as:
+
+```js
+const emoji = new EmojiConvertor();
+Object.assign(emoji, pluginOptions);
+```
+
+See [emoji-js](https://github.com/iamcal/js-emoji) for more details.
+
+The default options are:
+
+```js
+{
+  replace_mode: 'unified',
+}
 ```
