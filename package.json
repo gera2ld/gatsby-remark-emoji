@@ -14,5 +14,7 @@
     "gatsby",
     "gatsby-plugin",
     "emoji"
-  ]
+  ],
+  "repository": "git@github.com:gera2ld/gatsby-remark-emoji.git",
+  "author": "Gerald <gera2ld@live.com>"
 }
