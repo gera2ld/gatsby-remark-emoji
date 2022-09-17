@@ -6,7 +6,7 @@
 
 This is a plugin for gatsby-plugin-remark to replace `:emoji:` short names with UTF-8 emoji icons.
 
-It utilizes [emoji-js](https://github.com/iamcal/js-emoji) under the hood.
+It utilizes [emoji-js](https://github.com/iamcal/js-emoji) under the hood. See <https://projects.iamcal.com/emoji-data/table.htm> for a catalog of emojis.
 
 ## Installation
 
